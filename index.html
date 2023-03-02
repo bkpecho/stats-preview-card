@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <picture class="card__image">
+        <source
+          srcset="/images/image-header-desktop.jpg"
+          media="(min-width:600px)"
+        />
+
+        <img
+          src="/images/image-header-mobile.jpg"
+          alt="A photo of three employees in an office"
+        />
+      </picture>
+      <div class="card__container">
+        <h1 class="card__title">
+          Get <span class="card__accent">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="card__paragraph">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="card__group">
+          <div class="card__wrapper">
+            <span class="card__number">10k+</span>
+            <span class="card__text">companies</span>
+          </div>
+          <div class="card__wrapper">
+            <span class="card__number">314</span>
+            <span class="card__text">templates</span>
+          </div>
+          <div class="card__wrapper">
+            <span class="card__number">12M+</span>
+            <span class="card__text">queries</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--   <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/bkpecho" target="_blank">BK Pecho</a>.
+      </div>
+    </footer> -->
+  </body>
+</html>
